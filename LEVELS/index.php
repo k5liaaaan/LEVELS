@@ -22,7 +22,7 @@
 
         <div id="top_page">
           <img id="top_image" src="<?php echo get_template_directory_uri(); ?>/www/img/sample_top.jpg" class="img-responsive" alt="株式会社プライムハートで働く社員">
-        </div><!-- -->
+        </div><!--top end-->
 
 
           <div class="top_massage">
@@ -45,7 +45,7 @@
             </a>
           </div>
 
-          <div class="top_link">
+          <div class="top_link top_link_last">
             <h2 class="top_link_h2">研修制度への自信</h2>
             <p class="top_link_text">
               ＩＴ経験ゼロでも「わかる」教育方法。<br>
@@ -57,6 +57,7 @@
             </a>
           </div>
 
+          <?php /*
             <div class="top_info">
               <h2 class="top_info_h2">LEVELS NEWS</h2>
                 <div class="top_info_box">
@@ -74,7 +75,7 @@
                 </div> 
                       <?php endif; ?>
             </div>
-
+          */ ?>
         <p class="pageTop"><a href="#"></a></p>
     </div><!-- wrap -->
   </div><!-- wrapper -->

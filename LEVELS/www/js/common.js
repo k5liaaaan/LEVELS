@@ -65,19 +65,9 @@ jQuery(function($){
     });
   });
 
-  $(function(){
-   $(".tabs").droppy();
-
-   //スクロールをカスタマイズをしたい箇所へ追加のセレクタ
-    $('.scroll-pane').jScrollPane();
-    //ページを読み込んだ時はスクロールバーを透明にする
-    $('.jspDrag').css('opacity',0);
-    //カスタマイズさせたい箇所を囲むボックスに対してhoverを利用して表示・非表示を切り替える
-    $('.waku').hover(function(){
-    $('.jspDrag').animate({opacity:1});
-    },function(){
-    $('.jspDrag').animate({opacity:0});
-    });
-  });
+ function active() {
+    $(this).toggleClass("active").next().slideToggle(500);
+  }
+  $(".toggle").click(active);
 
 });

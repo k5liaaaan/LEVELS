@@ -10,30 +10,52 @@
 	display: flex;
     justify-content: flex-end;
 }
+.h1_plus{
+	position: relative;
+ 	padding-left: 30px;
+	color:#498AC9;
+	border: none;
+	margin:20px 0!important;
+}
+.h1_plus:before {
+	position: absolute;
+	font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+	content: ' ';
+	background: #c9e2ff;
+	color: #153c6e;
+	font-size: 15px;
+	border-radius: 50%;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 h2{
 	position: relative;
-    padding-left: 35px;
-    line-height: 33px;
-    margin-bottom: 8px !important;
-    border: none !important;
-}
-h2:before{
-	position: absolute;
-	top: 12px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #498AC9;
-    content: "";
+	border-top: solid 2px #80c8d1;
+	border-bottom: solid 2px #80c8d1;
+	background: #f4f4f4;
+	line-height: 1.4;
+	padding: 0.4em 0.5em;
+	margin: 2em 0 0.5em;
 }
 h2:after{
 	position: absolute;
-    top: 6px;
-    left: 9px;
-    width: 13px;
-    height: 13px;
-    border: 2px solid #498AC9;
-    content: "";
+	font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+	content: '\f0a7\ CHECK';
+	background: #80c8d1;
+	color: #fff;
+	left: 0px;
+	bottom: 100%;
+	border-radius: 5px 5px 0 0;
+	padding: 5px 7px 3px;
+	font-size: 0.7em;
+	line-height: 1;
+	letter-spacing: 0.05em;
 }
 h3,h4,h5,h6{
 	color: #498AC9;
@@ -44,6 +66,9 @@ h3,h4,h5,h6{
 
 @media screen and (min-width: 768px){
 	/* single_page */
+	h2{
+		font-size: 20px!important;
+	}
 	.singleBox{
 		padding: 20px;
     	margin: 30px auto;
@@ -72,6 +97,9 @@ h3,h4,h5,h6{
 
 @media screen and (max-width: 767px){
 	/* single_page */
+	h2{
+		font-size: 20px!important;
+	}
 	.singleBox{
 		padding: 4vw;
 	}

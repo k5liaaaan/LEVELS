@@ -81,7 +81,7 @@ function my_scripts_method() {
 }
 
 wp_enqueue_script(
- 'common02',
+ 'common03',
  get_stylesheet_directory_uri().'/www/js/common.js',
  array( 'sliderPro.min' )
  );
