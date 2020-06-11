@@ -22,7 +22,7 @@
 
         <div id="top_page">
           <img id="top_image" src="<?php echo get_template_directory_uri(); ?>/www/img/sample_top.jpg" class="img-responsive" alt="株式会社プライムハートで働く社員">
-        </div><!--top end-->
+        </div>
 
 
           <div class="top_massage">
