@@ -9,7 +9,7 @@
 <?php require "include/description.php"; ?>
 <link rel="canonical" href="/" />
 <?php require "include/common.php"; ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/www/css/single.css?01"/>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/www/css/single.css?02"/>
 <?php wp_enqueue_script( 'jquery' ); ?>
 <?php wp_head(); ?>
 
@@ -25,7 +25,7 @@
 		      while ( have_posts() ) : the_post();
 		    ?>
 		    <div class="singleBox">
-				<h1 class="h1_heading_blue"><?php the_title(); ?></h1>
+				<h1 class="h1_plus"><?php the_title(); ?></h1>
 				<p class="singleBoxTime"><?php the_date(); ?></p>
 				<p class="str_content2"><?php the_content(); ?></p>
 		    </div>
