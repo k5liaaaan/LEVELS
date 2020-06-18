@@ -15,6 +15,8 @@
 </head>
 <body>
 <?php get_header(); ?>
+    
+<!-- comment -->
 
   <div id="wrapper">
 
