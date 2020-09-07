@@ -71,7 +71,8 @@ h3,h4,h5,h6{
 	}
 	.singleBox{
 		padding: 20px;
-    	margin: 30px auto;
+		margin: 30px auto;
+		width: 60%;
 	}
 	.singleBox img{
     	margin: 30px auto;
@@ -89,6 +90,9 @@ h3,h4,h5,h6{
 	}
 	p{
 		line-height: 40px;
+	}
+	h3,h4,h5,h6{
+		margin: 20px 0px;
 	}
 	/* single_page */
 }
@@ -118,6 +122,9 @@ h3,h4,h5,h6{
 	}
 	p{
 		line-height: 10vw;
+	}
+	h3,h4,h5,h6{
+		margin: 4vw 0;
 	}
 	/* single_page */
 }

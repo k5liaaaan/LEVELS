@@ -34,7 +34,6 @@
 				endif;
 			?>
 		</div>
-        <p class="pageTop"><a href="#"></a></p>
     </div><!-- wrap -->
   </div><!-- wrapper -->
 

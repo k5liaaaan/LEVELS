@@ -1,6 +1,13 @@
+html{
+	font-family: 'Noto Serif JP', serif!important;
+}
 header{
 	display: flex!important;
 	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+}
+footer{
+	border-top: solid 1px #ddd;
 }
 
 .footer_content{
@@ -59,7 +66,8 @@ a:hover{
 	align-items: center;
 }
 .h_logo_plus{
-	width: 100%;
+	max-width: 100%;
+    height: 100%;
 }
 .plus_head_nav{
 
@@ -72,11 +80,63 @@ a:hover{
 }
 
 /* index */
+.top_page{
+	height: 38vw;
+}
+.top_image{
+	width: 100%;
+    position: absolute;
+    height: 38vw;
+}
+.top_hover_anime{
+	position: relative;
+    height: 38vw;
+    color: #fff;
+    opacity: 0;
+    transition: 1.5s;
+}
+.top_hover_anime:before{
+	content: "";
+    background: rgba(0,0,0,0.5);
+    height: 38vw;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    transition: 1.5s;
+}
+.top_hover_anime_on{
+	opacity: 1;
+}
+
+.top_hover_anime_on:before{
+	left: 0;
+}
+.top_hover_anime_hover:before{
+	left: 100%!important;
+}
+.top_hover_anime_p{
+	position: relative;
+    color: #fff;
+    text-align: center;
+}
+.top_hover_anime_a{
+	position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    transition: .3s;
+}
+.top_hover_anime_a:hover{
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+}
 .top_massage{
 	text-align: center;
 }
 .top_massage_h1{
 	border: none!important;
+	color: #000;
 }
 .top_massage_text{
 
@@ -137,97 +197,15 @@ a:hover{
 /* archive */
 
 
-/*Contact Form 7カスタマイズ*/
-/*スマホContact Form 7カスタマイズ*/
-@media(max-width:500px){
-.inquiry th,.inquiry td {
- display:block!important;
- width:100%!important;
- border-top:none!important;
- -webkit-box-sizing:border-box!important;
- -moz-box-sizing:border-box!important;
- box-sizing:border-box!important;
-}
-.inquiry tr:first-child th{
- border-top:1px solid #d7d7d7!important;
-}
-/* 必須・任意のサイズ調整 */	
-.inquiry .haveto,.inquiry .any {	
-font-size:10px;
-}}
-.inquiry{
-	width: 100%;
-}
-/*見出し欄*/
-.inquiry th{
-	text-align: left;
-	font-size: 14px;
-	color: #444;
-	padding: 10px;
-	width: 40%;
-	background: #f7f7f7;
-	border: solid 1px #d7d7d7;
-}
-/*通常欄*/
-.inquiry td{
- font-size:13px;
- border:solid 1px #d7d7d7;
- padding: 10px;
-}
-/*横の行とテーブル全体*/
-.entry-content .inquiry tr,.entry-content table{
- border:solid 1px #d7d7d7;	
-}
-/*必須の調整*/
-.haveto{
- font-size:7px;
- padding:5px;
- background:#ff9393;
- color:#fff;
- border-radius:2px;
- margin-right:5px;
- position:relative;
- bottom:1px;
-}
-/*任意の調整*/
-.any{
- font-size:7px;
- padding:5px;
- background:#93c9ff;
- color:#fff;
- border-radius:2px;
- margin-right:5px;
- position:relative;
- bottom:1px;
-}
-/*ラジオボタンを縦並び指定*/
-.verticallist .wpcf7-list-item{
- display:block;
-}
-/*送信ボタンのデザイン変更*/
-#formbtn{
- display: block;
- padding:1em 0;
- margin-top:30px;
- width:100%;
- background:#ffaa56;
- color:#fff;
- font-size:18px;
- font-weight:bold;	 
- border-radius:2px;
- border: none;
-}
-/*送信ボタンマウスホバー時*/
-#formbtn:hover{
- background:#fff;
- color:#ffaa56;
-}
+
 
 @media screen and (min-width: 768px){
 	header{
 		height: 70px;
 	}
-
+	footer{
+		padding-bottom: 20px;
+	}
 	.footer_content{
 	
 	}
@@ -249,6 +227,7 @@ font-size:10px;
 	.main_logo{
 		width: 33%;
 		margin-left: 10px;
+		justify-content: center;
 	}
 	.plus_main{
 		width: 80%;
@@ -321,11 +300,23 @@ font-size:10px;
 	}
 
 	/* index */
+	.top_hover_anime_p{
+		font-size: 4vw;
+		top: 12vw;
+	}
+	.top_hover_anime_a{
+		top: 14vw;
+	    padding: 10px 30px;
+	    font-size: 3vw;
+	    border: solid 1px;
+	    color: #fff;
+	}
 	.top_massage{
 		margin: 60px 0px!important;
 	}
 	.top_massage_h1{
 		margin-bottom: 50px!important;
+		font-size: 30px;
 	}
 	.top_massage_text{
 		font-size: 24px;
@@ -399,13 +390,15 @@ font-size:10px;
 	header{
 		height: 18vw;
 		position: relative;
+		padding-bottom: 6vw;
 	}
-
+	footer{
+	
+	}
 	.footerPlus{
 		margin: 6vw 0;
 	    padding: 0 3vw;
 	}
-
 	.footerPlus li{
 		padding: 0px 1vw;
 	    font-size: 3.6vw;
@@ -507,6 +500,18 @@ font-size:10px;
 	
 
 	/* index */
+	.top_hover_anime_p{
+		font-size: 6vw;
+    	top: 6vw;
+	}
+	.top_hover_anime_a{
+		top: 8vw;
+	    padding: 2vw 7vw;
+	    font-size: 4vw;
+	    background: rgba(255,255,255,0.8);
+	    color: #000;
+	    font-weight: bold;
+	}
 	.top_massage{
 		margin: 16vw 0px!important;
 	}
@@ -577,4 +582,90 @@ font-size:10px;
 		font-size: 5.2vw;
 	}
 	/* archive */
+}
+
+/*Contact Form 7カスタマイズ*/
+/*スマホContact Form 7カスタマイズ*/
+@media(max-width:500px){
+.inquiry th,.inquiry td {
+ display:block!important;
+ width:100%!important;
+ border-top:none!important;
+ -webkit-box-sizing:border-box!important;
+ -moz-box-sizing:border-box!important;
+ box-sizing:border-box!important;
+}
+.inquiry tr:first-child th{
+ border-top:1px solid #d7d7d7!important;
+}
+/* 必須・任意のサイズ調整 */	
+.inquiry .haveto,.inquiry .any {	
+font-size:10px;
+}}
+.inquiry{
+	width: 100%;
+}
+/*見出し欄*/
+.inquiry th{
+	text-align: left;
+	font-size: 14px;
+	color: #444;
+	padding: 10px;
+	width: 40%;
+	background: #f7f7f7;
+	border: solid 1px #d7d7d7;
+}
+/*通常欄*/
+.inquiry td{
+ font-size:13px;
+ border:solid 1px #d7d7d7;
+ padding: 10px;
+}
+/*横の行とテーブル全体*/
+.entry-content .inquiry tr,.entry-content table{
+ border:solid 1px #d7d7d7;	
+}
+/*必須の調整*/
+.haveto{
+ font-size:7px;
+ padding:5px;
+ background:#ff9393;
+ color:#fff;
+ border-radius:2px;
+ margin-right:5px;
+ position:relative;
+ bottom:1px;
+}
+/*任意の調整*/
+.any{
+ font-size:7px;
+ padding:5px;
+ background:#93c9ff;
+ color:#fff;
+ border-radius:2px;
+ margin-right:5px;
+ position:relative;
+ bottom:1px;
+}
+/*ラジオボタンを縦並び指定*/
+.verticallist .wpcf7-list-item{
+ display:block;
+}
+/*送信ボタンのデザイン変更*/
+#formbtn{
+ display: block;
+ padding:1em 0;
+ margin-top:30px;
+ width:100%;
+ background:#ffaa56;
+ color:#fff;
+ font-size:18px;
+ font-weight:bold;	 
+ border-radius:2px;
+ border: none;
+}
+/*送信ボタンマウスホバー時*/
+#formbtn:hover{
+ background:#fff;
+ color:#ffaa56;
 }
