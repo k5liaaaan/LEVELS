@@ -20,9 +20,13 @@
 
     <div id="wrap">
 
-        <div id="top_page">
-          <img id="top_image" src="<?php echo get_template_directory_uri(); ?>/www/img/sample_top.jpg" class="img-responsive" alt="株式会社プライムハートで働く社員">
-        </div><
+        <div class="top_page">
+          <img class="top_image" src="<?php echo get_template_directory_uri(); ?>/www/img/sample_top.jpg" class="img-responsive" alt="株式会社プライムハートで働く社員">
+          <div class="top_hover_anime">
+            <p class="top_hover_anime_p">あなたの未来はここから変わる</p>
+            <a class="top_hover_anime_a" href="/entry/">会社説明会へ</a>
+          </div>
+        </div>
 
 
           <div class="top_massage">
@@ -76,7 +80,6 @@
                       <?php endif; ?>
             </div>
           */ ?>
-        <p class="pageTop"><a href="#"></a></p>
     </div><!-- wrap -->
   </div><!-- wrapper -->
 

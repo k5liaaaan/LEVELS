@@ -70,4 +70,21 @@ jQuery(function($){
   }
   $(".toggle").click(active);
 
+
+  setTimeout(function(){
+     $('.top_hover_anime').addClass("top_hover_anime_on");
+  },1000);
+
+  $(".top_hover_anime_a").hover
+
+  $('.top_hover_anime_a').hover(
+    function(){  
+        $(".top_hover_anime").addClass("top_hover_anime_hover");
+    },
+    function(){
+        $(".top_hover_anime").removeClass("top_hover_anime_hover");
+    }
+  );
+
+
 });

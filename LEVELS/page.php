@@ -32,7 +32,7 @@
 	      if ( have_posts() ) :
 	      while ( have_posts() ) : the_post();
 	    ?>
-	    <div class="col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0 mb">
+	    <div class="singleBox">
 			<h1 class="h1_plus"><?php the_title(); ?></h1>
 			<p class="str_content2"><?php the_content(); ?></p>
 	    </div>
@@ -41,7 +41,6 @@
 			endif;
 		?>
 
-        <p class="pageTop"><a href="#"></a></p>
     </div><!-- wrap -->
   </div><!-- wrapper -->
 
